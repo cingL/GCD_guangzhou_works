@@ -1,35 +1,49 @@
-body{
-	padding-top: 20px;
-	background-color: #eee;
-}
-div{
-	border-radius: 10px;
-	padding: 10px;
+body {
+    padding-top: 20px;
+    background-color: #eee;
 }
 
-#section_a{
-	background: white;
-	text-align: center;
-	margin-bottom: 10px;
+div {
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.double{
-	background-color: white;
+/* line1 */
+#section_a {
+    background: white;
+    text-align: center;
 }
 
-.triple{
-	background-color: white;
-	padding: 10px;
+.slick-prev:before, .slick-next:before {
+    color: transparent;
 }
 
-.limit_lines{
-	overflow: hidden;
+.a_child {
+	margin: 10px;
+	font-size: 20px;
+}
+
+
+/* line2 */
+.double {
+    background-color: white;
+}
+
+.limit_lines {
+    overflow: hidden;
     text-overflow: ellipsis;
     line-height: 16px;
     max-height: 48px;
 }
 
-.section_title{
-	font-weight: bold;
-	font-size: 30px;
+
+/* line3 */
+.triple {
+    background-color: white;
+    padding: 10px;
+}
+
+.section_title {
+    font-weight: bold;
+    font-size: 30px;
 }
