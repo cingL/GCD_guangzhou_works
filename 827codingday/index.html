@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>GCD Guangzhou</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body class="impress-not-supported">
+	<!-- not support backup -->
+	<div class="fallback-message">
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    	<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<!-- every element should have class step -->
+	<div id="impress">
+
+		<!-- date -->
+		<div class="step"  data-x="-200" data-x="-200" data-rotate-x="90">
+			<p> 2017-8-27 </p>
+			<p> 10:00 ~ 17:00 </p>
+			<p> YiQiKaiGong </p>
+		</div>
+
+		<!-- circle -->
+		<div class="step" data-x="500" data-y="500" data-rotate="72">
+			<p> html </p>
+		</div>
+		<div class="step" data-x="500" data-y="500" data-rotate="144">
+			<p> css </p>
+		</div>
+		<div class="step" data-x="500" data-y="500" data-rotate="216">
+			<p> JavaScript </p>
+		</div>
+		<div class="step" data-x="500" data-y="500" data-rotate="288">
+			<p> blabla</p>
+		</div>
+		<div id="circle" data-x="0" data-y="0"></div>
+
+		<div class="step" data-x="-500" data-y="-500" data-rotate-x="45">
+			<h1>Girls Coding Day</h1>
+		</div>
+		<div id="ing" class="step" data-x="0" data-y="0" data-rotate-x="45">
+			<p>Just <b class="rotating">Enjoy</b> it!</p>
+		</div>
+
+	</div>
+
+	<!-- script -->
+	<script type="text/javascript" src="./impress.js"></script>
+	<script>impress().init();</script>
+</body>
+</html>
