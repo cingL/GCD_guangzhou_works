@@ -1,0 +1,7 @@
+.generate-char(11);
+.generate-char(@n, @i: 6) when (@i <=@n) {
+    .char@{i} {
+        transform: rotate((180 + 18*(@i - 6))deg);
+    }
+    .generate-char(@n, (@i + 1));
+}

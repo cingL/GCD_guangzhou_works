@@ -1,0 +1,218 @@
+.size span {
+    font: 50px Monaco, MonoSpace;
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    transform-origin: bottom center;
+}
+
+
+/* h1 */
+
+h1 {
+    transform: rotate(245deg);
+    padding-left: 50%!important;
+    padding-bottom: 50%!important;
+}
+
+h1 .char2 {
+    transform: rotate(16deg)
+}
+
+h1 .char3 {
+    transform: rotate(32deg)
+}
+
+h1 .char4 {
+    transform: rotate(48deg)
+}
+
+h1 .char5 {
+    transform: rotate(64deg)
+}
+
+h1 .char6 {
+    transform: rotate(80deg)
+}
+
+h1 .char7 {
+    transform: rotate(96deg)
+}
+
+h1 .char8 {
+    transform: rotate(112deg)
+}
+
+h1 .char9 {
+    transform: rotate(128deg)
+}
+
+h1 .char10 {
+    transform: rotate(144deg)
+}
+
+h1 .char11 {
+    transform: rotate(160deg)
+}
+
+h1 .char12 {
+    transform: rotate(176deg)
+}
+
+h1 .char13 {
+    transform: rotate(192deg)
+}
+
+h1 .char14 {
+    transform: rotate(208deg)
+}
+
+h1 .char15 {
+    transform: rotate(224deg)
+}
+
+h1 .char16 {
+    transform: rotate(240deg)
+}
+
+
+/* date */
+
+#date {
+    text-align: right;
+    padding: 55%;
+    /*transform: rotate(-45deg);*/
+}
+
+#date .char7 {
+    transform: rotate(11.25deg)
+}
+
+#date .char8 {
+    transform: rotate(22.5deg)
+}
+
+#date .char9 {
+    transform: rotate(33.75deg)
+}
+
+#date .char10 {
+    transform: rotate(45deg)
+}
+
+#date .char11 {
+    transform: rotate(56.25deg)
+}
+
+#date .char12 {
+    transform: rotate(67.5deg)
+}
+
+#date .char13 {
+    transform: rotate(78.75deg)
+}
+
+#date .char14 {
+    transform: rotate(90deg)
+}
+
+
+/* time */
+
+#time {
+    padding: 50%;
+}
+
+#time .char6 {
+    transform: rotate(-90deg)
+}
+
+#time .char7 {
+    transform: rotate(-82.5deg)
+}
+
+#time .char8 {
+    transform: rotate(-75deg)
+}
+
+#time .char9 {
+    transform: rotate(-67.5deg)
+}
+
+#time .char10 {
+    transform: rotate(-60deg)
+}
+
+#time .char11 {
+    transform: rotate(-52.5deg)
+}
+
+#time .char12 {
+    transform: rotate(-45deg)
+}
+
+#time .char13 {
+    transform: rotate(-37.5deg)
+}
+
+#time .char14 {
+    transform: rotate(-30deg)
+}
+
+#time .char15 {
+    transform: rotate(-22.5deg)
+}
+
+#time .char16 {
+    transform: rotate(-15deg)
+}
+
+#time .char17 {
+    transform: rotate(-7.5deg)
+}
+
+#time .char18 {
+    transform: rotate(0deg)
+}
+
+
+/* location */
+
+#location {
+    padding: 50%;
+}
+
+#location .char6 {
+    transform: rotate(180deg)
+}
+
+#location .char7 {
+    transform: rotate(198deg)
+}
+
+#location .char8 {
+    transform: rotate(216deg)
+}
+
+#location .char9 {
+    transform: rotate(234deg)
+}
+
+#location .char10 {
+    transform: rotate(252deg)
+}
+
+#location .char11 {
+    transform: rotate(270deg)
+}
+
+
+/* city */
+
+#city {
+    padding: 55%;
+}
+
+#location .char6 {
+    transform: rotate(-165deg)
+}
