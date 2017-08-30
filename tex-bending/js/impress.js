@@ -643,6 +643,14 @@
                 if ( window.location.hash !== lastHash ) {
                     goto( getElementFromHash() );
                 }
+
+                var imgs = document.getElementsByTagName('img');
+                for (var i = imgs.length - 1; i >= 0; i--) {
+                    console.log(imgs[i]);
+                    imgs[i].style["width"] = "20%";
+                    imgs[i].style["height"] = "20%";
+                }
+
             }, false );
 
             // START

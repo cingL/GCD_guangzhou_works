@@ -4,4 +4,5 @@ $(document).on('ready', function() {
     $('#time').lettering();
     $('#location').lettering();
     $('#city').lettering();
+    $('#participant').lettering();
 });

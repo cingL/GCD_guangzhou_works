@@ -1,8 +1,6 @@
 .size span {
-    font: 50px Monaco, MonoSpace;
-    height: 200px;
     position: absolute;
-    width: 20px;
+    font: 50px Monaco, MonoSpace;
     transform-origin: bottom center;
 }
 
@@ -13,6 +11,11 @@ h1 {
     transform: rotate(245deg);
     padding-left: 50%!important;
     padding-bottom: 50%!important;
+}
+
+h1 span {
+    height: 200px;
+    width: 20px;
 }
 
 h1 .char2 {
@@ -79,9 +82,15 @@ h1 .char16 {
 /* date */
 
 #date {
-    text-align: right;
-    padding: 55%;
-    /*transform: rotate(-45deg);*/
+    /*margin-bottom: 8%;*/
+    padding-left: 50%;
+    transform: rotate(-45deg);
+}
+
+#date span {
+    width: 20px;
+    height: 220px;
+    display: inline-block;
 }
 
 #date .char7 {
@@ -120,7 +129,14 @@ h1 .char16 {
 /* time */
 
 #time {
-    padding: 50%;
+    margin-left: 40%;
+    transform: rotate(33deg);
+    margin-top: 27%;
+}
+
+#time span {
+    height: 200px;
+    width: 20px;
 }
 
 #time .char6 {
@@ -179,7 +195,14 @@ h1 .char16 {
 /* location */
 
 #location {
-    padding: 50%;
+    transform: rotate(112deg);
+    margin-left: -55%;
+    margin-top: 125%;
+}
+
+#location span {
+    height: 200px;
+    width: 20px;
 }
 
 #location .char6 {
@@ -210,9 +233,101 @@ h1 .char16 {
 /* city */
 
 #city {
-    padding: 55%;
+    transform: rotate(-112deg);
+    margin-bottom: 79%;
+    margin-right: 31%;
 }
 
-#location .char6 {
-    transform: rotate(-165deg)
+#city span {
+    height: 200px;
+    width: 20px;
+}
+
+#city .char6 {
+    transform: rotate(130deg)
+}
+
+#city .char7 {
+    transform: rotate(110deg)
+}
+
+#city .char8 {
+    transform: rotate(90deg)
+}
+
+/* participant */
+
+#participant {
+    transform: rotate(-90deg);
+    margin-right: 45%;
+}
+
+#participant span {
+    font-size: 30px;
+    height: 200px;
+    width: 20px;
+}
+
+#participant .char7 {
+    transform: rotate(11.25deg)
+}
+
+#participant .char8 {
+    transform: rotate(22.5deg)
+}
+
+#participant .char9 {
+    transform: rotate(33.75deg)
+}
+
+#participant .char10 {
+    transform: rotate(45deg)
+}
+
+#participant .char11 {
+    transform: rotate(56.25deg)
+}
+
+#participant .char12 {
+    transform: rotate(67.5deg)
+}
+
+#participant .char13 {
+    transform: rotate(78.75deg)
+}
+
+#participant .char14 {
+    transform: rotate(90deg)
+}
+
+#participant .char15 {
+    transform: rotate(101.25deg)
+}
+
+#participant .char16 {
+    transform: rotate(112.5deg)
+}
+
+#participant .char17 {
+    transform: rotate(123.75deg)
+}
+
+#participant .char18 {
+    transform: rotate(135deg)
+}
+
+#participant .char19 {
+    transform: rotate(146.25deg)
+}
+
+#participant .char20 {
+    transform: rotate(157.5deg)
+}
+
+#participant .char21 {
+    transform: rotate(168.75deg)
+}
+
+#participant .char22 {
+    transform: rotate(180deg)
 }
