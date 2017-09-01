@@ -1,67 +1,27 @@
-#participant .char6 {
-    transform: rotate(10deg)
+#thanks .char1 {
+    transform: rotate(-90deg)
 }
 
-#participant .char7 {
-    transform: rotate(20deg)
+#thanks .char2 {
+    transform: rotate(-60deg)
 }
 
-#participant .char8 {
+#thanks .char3 {
+    transform: rotate(-30deg)
+}
+
+#thanks .char4 {
+    transform: rotate(0)
+}
+
+#thanks .char5 {
     transform: rotate(30deg)
 }
 
-#participant .char9 {
-    transform: rotate(40deg)
-}
-
-#participant .char10 {
-    transform: rotate(50deg)
-}
-
-#participant .char11 {
+#thanks .char6 {
     transform: rotate(60deg)
 }
 
-#participant .char12 {
-    transform: rotate(70deg)
-}
-
-#participant .char13 {
-    transform: rotate(80deg)
-}
-
-#participant .char14 {
+#thanks .char7 {
     transform: rotate(90deg)
-}
-
-#participant .char15 {
-    transform: rotate(100deg)
-}
-
-#participant .char16 {
-    transform: rotate(110deg)
-}
-
-#participant .char17 {
-    transform: rotate(120deg)
-}
-
-#participant .char18 {
-    transform: rotate(130deg)
-}
-
-#participant .char19 {
-    transform: rotate(140deg)
-}
-
-#participant .char20 {
-    transform: rotate(150deg)
-}
-
-#participant .char21 {
-    transform: rotate(160deg)
-}
-
-#participant .char22 {
-    transform: rotate(170deg)
 }

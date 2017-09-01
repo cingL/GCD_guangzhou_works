@@ -1,7 +1,9 @@
 .size span {
     position: absolute;
-    font: 50px Monaco, MonoSpace;
+    font: 60px Monaco, MonoSpace;
     transform-origin: bottom center;
+    height: 200px;
+    width: 20px;
 }
 
 
@@ -14,8 +16,8 @@ h1 {
 }
 
 h1 span {
-    height: 200px;
-    width: 20px;
+    font-size: 86px!important;
+    font-weight: bold!important;
 }
 
 h1 .char2 {
@@ -88,6 +90,7 @@ h1 .char16 {
 }
 
 #date span {
+    color: #F15631;
     width: 20px;
     height: 220px;
     display: inline-block;
@@ -129,14 +132,10 @@ h1 .char16 {
 /* time */
 
 #time {
+    color: #F15631;
     margin-left: 40%;
     transform: rotate(33deg);
     margin-top: 27%;
-}
-
-#time span {
-    height: 200px;
-    width: 20px;
 }
 
 #time .char6 {
@@ -198,11 +197,7 @@ h1 .char16 {
     transform: rotate(112deg);
     margin-left: -55%;
     margin-top: 125%;
-}
-
-#location span {
-    height: 200px;
-    width: 20px;
+    color: #FCBE32;
 }
 
 #location .char6 {
@@ -236,11 +231,7 @@ h1 .char16 {
     transform: rotate(-112deg);
     margin-bottom: 79%;
     margin-right: 31%;
-}
-
-#city span {
-    height: 200px;
-    width: 20px;
+    color: #F8CA00;
 }
 
 #city .char6 {
@@ -255,17 +246,17 @@ h1 .char16 {
     transform: rotate(90deg)
 }
 
+
 /* participant */
 
 #participant {
     transform: rotate(-90deg);
     margin-right: 45%;
+    color: #008744;
 }
 
 #participant span {
-    font-size: 30px;
-    height: 200px;
-    width: 20px;
+    font-size: 40px;
 }
 
 #participant .char7 {
@@ -330,4 +321,38 @@ h1 .char16 {
 
 #participant .char22 {
     transform: rotate(180deg)
+}
+
+#
+
+
+/* thanks */
+
+
+#thanks .char1 {
+    transform: rotate(-90deg)
+}
+
+#thanks .char2 {
+    transform: rotate(-60deg)
+}
+
+#thanks .char3 {
+    transform: rotate(-30deg)
+}
+
+#thanks .char4 {
+    transform: rotate(0)
+}
+
+#thanks .char5 {
+    transform: rotate(30deg)
+}
+
+#thanks .char6 {
+    transform: rotate(60deg)
+}
+
+#thanks .char7 {
+    transform: rotate(90deg)
 }

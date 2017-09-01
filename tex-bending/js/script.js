@@ -5,4 +5,5 @@ $(document).on('ready', function() {
     $('#location').lettering();
     $('#city').lettering();
     $('#participant').lettering();
+    $('#thanks').lettering();
 });
