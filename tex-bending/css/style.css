@@ -23,6 +23,7 @@ img {
     height: 50px;
     background-color: #92B4F4;
     border-radius: 200px;
+    text-align: center;
 }
 
 #rush {
@@ -36,6 +37,18 @@ img {
 }
 
 #nothing {
+    text-align: center;
+    width: 480px;
+    height: 150px;
     color: #16335F;
-    font-size: 100px;
+    font-size: 50px;
+}
+
+#nothing a {
+    background-color: #eee;
+}
+
+.thoughts {
+    font-size: 60px;
+    visibility: hidden;
 }

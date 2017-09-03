@@ -323,14 +323,11 @@ h1 .char16 {
     transform: rotate(180deg)
 }
 
-#
-
 
 /* thanks */
 
-
 #thanks .char1 {
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
 }
 
 #thanks .char2 {

@@ -681,7 +681,7 @@
 //
 // Thanks for reading it all.
 // Or thanks for scrolling down and reading the last part.
-//
+//s
 // I've learnt a lot when building impress.js and I hope this code and comments
 // will help somebody learn at least some part of it.
 function zoomImage(event) {
@@ -694,9 +694,9 @@ function zoomImage(event) {
     for (var i = elements.length - 1; i >= 0; i--) {
         if (elements[i].classList.contains("active")) {
             if (elements[i].children.length > 0) {
+                showThoughts(elements[i]);
                 var img = elements[i].children[0].children[0];
                 if (typeof img != "undefined" && img.tagName == "IMG") {
-                    console.log(img);
                     img.style["width"] = "100%";
                     img.style["height"] = "100%";
                 }
@@ -705,5 +705,19 @@ function zoomImage(event) {
                 }
             }
         }
+    }
+}
+
+function showThoughts(element) {
+    var circles = document.getElementsByClassName('circle');
+    for (var i = circles.length - 1; i >= 0; i--) {
+        circles[i].style["width"] = "50px";
+        circles[i].style["height"] = "50px";
+        circles[i].children[0].style["visibility"] = "hidden";
+    }
+    if (element.classList.contains("circle")) {
+        element.style["width"] = "300px";
+        element.style["height"] = "300px";
+        element.children[0].style["visibility"] = "visible";
     }
 }
