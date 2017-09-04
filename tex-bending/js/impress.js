@@ -618,7 +618,7 @@
                         api.next();
                         break;
                 }
-                zoomImage(event);
+                zoom(event);
                 event.preventDefault();
             }
         }, false);
@@ -626,6 +626,7 @@
         document.addEventListener("click", function(event) {
             // Event delegation with "bubbling"
             // Check if event target (or any of its parents is a link)
+            // zoomImage(event);
             var target = event.target;
             while ((target.tagName !== "A") && (target !== document.documentElement)) {
                 target = target.parentNode;
@@ -645,6 +646,7 @@
         // Delegated handler for clicking on step elements
         document.addEventListener("click", function(event) {
             var target = event.target;
+            zoom(target);
             // Find closest step element that is not active
             while (!(target.classList.contains("step") && !target.classList.contains("active")) && (target !== document.documentElement)) {
                 target = target.parentNode;
@@ -684,26 +686,48 @@
 //s
 // I've learnt a lot when building impress.js and I hope this code and comments
 // will help somebody learn at least some part of it.
-function zoomImage(event) {
-    var elements = event.target.children[0].children[0].children;
+function zoom(e) {
+    // console.log("keyup");
+    // console.log(elements);
     var imgs = document.getElementsByTagName('img');
     for (var i = imgs.length - 1; i >= 0; i--) {
         imgs[i].style["width"] = "10%";
         imgs[i].style["height"] = "10%";
     }
-    for (var i = elements.length - 1; i >= 0; i--) {
-        if (elements[i].classList.contains("active")) {
-            if (elements[i].children.length > 0) {
-                showThoughts(elements[i]);
-                var img = elements[i].children[0].children[0];
-                if (typeof img != "undefined" && img.tagName == "IMG") {
-                    img.style["width"] = "100%";
-                    img.style["height"] = "100%";
+    if (typeof e.target != "undefined") {
+        var elements = e.target.children[0].children[0].children;
+        for (var i = elements.length - 1; i >= 0; i--) {
+            if (elements[i].classList.contains("active")) {
+                if (elements[i].children.length > 0) {
+                    var ele = elements[i].children[0].children[0];
+                    zoomImage(ele, 1);
+                    console.log(1);
+                    console.log(elements[i]);
+                    showThoughts(elements[i]);
+
                 }
                 if (elements[i].children[0].classList.contains("half")) {
-                    elements[i].children[0].children[0].style["width"] = "80%";
+                    var ele = elements[i].children[0].children[0];
+                    zoomImage(ele, 2);
+                    console.log(1);
+                    console.log(ele);
+                    showThoughts(ele);
                 }
             }
+        }
+    } else {
+        zoomImage(e, 1);
+        showThoughts(e);
+    }
+}
+
+function zoomImage(ele, style) {
+    if (style == 2) {
+        ele.style["width"] = "80%";
+    } else {
+        if (typeof ele != "undefined" && ele.tagName == "IMG") {
+            ele.style["width"] = "100%";
+            ele.style["height"] = "100%";
         }
     }
 }

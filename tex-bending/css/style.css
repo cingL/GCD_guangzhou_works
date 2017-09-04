@@ -1,6 +1,11 @@
 #review {
+    width: 140px;
     font-size: 30px;
     color: #0000A1;
+}
+
+#review p {
+    line-height: 32px;
 }
 
 .viewport {
@@ -18,14 +23,6 @@ img {
     width: 10%;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: #92B4F4;
-    border-radius: 200px;
-    text-align: center;
-}
-
 #rush {
     color: #1F6ED4;
 }
@@ -38,8 +35,7 @@ img {
 
 #nothing {
     text-align: center;
-    width: 480px;
-    height: 150px;
+    width: 280px;
     color: #16335F;
     font-size: 50px;
 }
@@ -48,7 +44,22 @@ img {
     background-color: #eee;
 }
 
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #296ECB;
+    border-radius: 200px;
+    text-align: center;
+    position: relative;
+}
+
 .thoughts {
-    font-size: 60px;
+    font-size: 25px;
     visibility: hidden;
+    width: 215px;
+    height: 215px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #FCEF82;
+    font-weight: bold;
 }
