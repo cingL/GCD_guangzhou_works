@@ -1,8 +1,8 @@
-.generate-char(7);
+.generate-char(9);
 .generate-char(@n, @i: 1) when (@i <=@n) {
     .char@{i} {
         // transform: rotate((180 + 18*(@i - 6))deg);
-        transform: rotate(-90 + (@i - 1) * 30deg);
+        transform: rotate(-10 + (@i - 1) * 7.5deg);
     }
     .generate-char(@n, (@i + 1));
 }

@@ -704,7 +704,6 @@ function zoom(e) {
                     console.log(1);
                     console.log(elements[i]);
                     showThoughts(elements[i]);
-
                 }
                 if (elements[i].children[0].classList.contains("half")) {
                     var ele = elements[i].children[0].children[0];
