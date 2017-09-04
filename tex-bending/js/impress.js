@@ -701,15 +701,15 @@ function zoom(e) {
                 if (elements[i].children.length > 0) {
                     var ele = elements[i].children[0].children[0];
                     zoomImage(ele, 1);
-                    console.log(1);
-                    console.log(elements[i]);
+                    // console.log(1);
+                    // console.log(elements[i]);
                     showThoughts(elements[i]);
                 }
                 if (elements[i].children[0].classList.contains("half")) {
                     var ele = elements[i].children[0].children[0];
                     zoomImage(ele, 2);
-                    console.log(1);
-                    console.log(ele);
+                    // console.log(1);
+                    // console.log(ele);
                     showThoughts(ele);
                 }
             }
