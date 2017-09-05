@@ -23,7 +23,7 @@ body {
     bottom: 350px;
     right: 350px;
     font-size: 250px;
-    color: #6A57AA;
+    color: #B09ECD;
 }
 
 img {
@@ -77,16 +77,12 @@ img {
     font-weight: bold;
 }
 
-#nav {
+nav {
     position: fixed;
     top: 0;
     left: 0;
     pointer-events: auto;
     font-size: 20px;
-}
-
-#nav ul {
-    background-color: #C0E08A;
 }
 
 i {
@@ -97,3 +93,4 @@ i {
 a {
     text-shadow: none;
 }
+
