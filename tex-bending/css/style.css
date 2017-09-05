@@ -18,10 +18,6 @@ body {
     position: absolute!important;
 }
 
-#nav {
-    background-color: #C0E08A;
-}
-
 #title {
     position: relative;
     bottom: 350px;
@@ -79,4 +75,25 @@ img {
     vertical-align: middle;
     color: #FCEF82;
     font-weight: bold;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+    font-size: 20px;
+}
+
+#nav ul {
+    background-color: #C0E08A;
+}
+
+i {
+    font-size: 48px;
+    color: black;
+}
+
+a {
+    text-shadow: none;
 }

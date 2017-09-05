@@ -3,21 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>text bending</title>
-	<link rel="stylesheet" type="text/css" href="./css/bending.css">
-	<link rel="stylesheet" type="text/css" href="./css/impress.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Girls Coding Day in Canton - event review</title>
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<!-- bootsrap -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- others -->
 	<script type="text/javascript" src="./js/lettering.js"></script>
 	<script type="text/javascript" src="./js/script.js"></script>
+	<!-- style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/impress.css">
+	<link rel="stylesheet" type="text/css" href="./css/bending.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 	<div id="impress">
 
 		<div class="step viewport" data-x="500" data-y="1000" data-rotate="90" data-scale="3">
 			<p id="title">Girls</p>
-			<p id="nav"></p>
 		</div>
 
 		<!-- C -->
@@ -26,7 +31,7 @@
 		</div>
 
 		<!-- O_date -->
-		<div class="step" data-x="130" data-y="50" data-rotate="40" id="date">
+		<div class="step" data-x="130"	 data-y="50" data-rotate="40" id="date">
 			<div class="size">
 				<p id="detail_date">2017-8-27</p>
 			</div>
@@ -59,7 +64,7 @@
 		<!-- D_event -->
 		<div class="step" data-x="230" data-y="800">
 			<div id="rush">
-				<p>一同上演了精彩的Coding Rush</p>
+				<p>共同上演了精彩的Coding Rush</p>
 			</div>
 		</div>
 
@@ -203,13 +208,27 @@
 		</div>
 
 		<div class="step" data-x="-600" data-y="2270" data-z="-1000" data-rotate="180">
-			<div id="nothing"><a href="https://tutorial.girlscodingday.org/">Join us</a><br/>in your city!</div>
+			<div id="nothing"><a href="https://girlscodingday.org/" target="_blank">Join us</a><br/>in your city!</div>
 		</div>
 		<div class="step" data-x="-700" data-y="1700" data-z="-1000" data-rotate="270">
 			<div id="thanks" class="size">thanks!</div>
 		</div>
 
 	</div>
+	<div id="nav">
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li><a href="#step-1">Home</a></li>
+				<li><a href="#review">Images</a></li>
+				<li><a href="#step-36">Join us!</a></li>
+				<li>
+					<a href="https://twitter.com/codingirlsclub?lang=zh-cn" target="_blank"><i class="fa fa-twitter"></i></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<footer></footer>
+
 	<!-- script -->
 	<script type="text/javascript" src="./js/impress.js"></script>
 	<script>impress().init();</script>

@@ -626,7 +626,6 @@
         document.addEventListener("click", function(event) {
             // Event delegation with "bubbling"
             // Check if event target (or any of its parents is a link)
-            // zoomImage(event);
             var target = event.target;
             while ((target.tagName !== "A") && (target !== document.documentElement)) {
                 target = target.parentNode;
@@ -686,9 +685,9 @@
 //s
 // I've learnt a lot when building impress.js and I hope this code and comments
 // will help somebody learn at least some part of it.
+// TODO 加navbar后children有變化，需要整理
 function zoom(e) {
-    // console.log("keyup");
-    // console.log(elements);
+    console.log(e); //images -> keyup : target 只有一个了
     var imgs = document.getElementsByTagName('img');
     for (var i = imgs.length - 1; i >= 0; i--) {
         imgs[i].style["width"] = "10%";
@@ -696,13 +695,14 @@ function zoom(e) {
     }
     if (typeof e.target != "undefined") {
         var elements = e.target.children[0].children[0].children;
+        console.log(e.target);
         for (var i = elements.length - 1; i >= 0; i--) {
             if (elements[i].classList.contains("active")) {
                 if (elements[i].children.length > 0) {
                     var ele = elements[i].children[0].children[0];
                     zoomImage(ele, 1);
-                    // console.log(1);
-                    // console.log(elements[i]);
+                    console.log(1);
+                    console.log(elements[i]);
                     showThoughts(elements[i]);
                 }
                 if (elements[i].children[0].classList.contains("half")) {
