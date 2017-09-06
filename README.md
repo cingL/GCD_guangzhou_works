@@ -10,7 +10,7 @@
 
 -text-bending (idea that created on event day, mark down the process of project)
 
--project (that's what I want to show you, [see it](https://cingl.github.io/GCD_guangzhou_works/project/index.html#/step-1).)
+-project (that's what I want to show you, [see it](https://cingl.github.io/GCDinCanton/project/index.html#/step-1).)
 
 ## Thanks
 Thanks to my coach [Windson](https://github.com/Windsooon) and Neco, help me to solve lots of stupid problem. \_(:з」∠)_
