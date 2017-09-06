@@ -719,7 +719,7 @@ function zoom(e) {
     if (e.toString().includes("Key")) {
         if (e.target) {
             if (e.target.children.length > 0) {
-                var elements = e.target.children[0].children[0].children;
+                var elements = e.target.children[1].children[0].children;
                 for (var i = elements.length - 1; i >= 0; i--) {
                     if (elements[i].classList.contains("active")) {
                         if (elements[i].children.length > 0) {
