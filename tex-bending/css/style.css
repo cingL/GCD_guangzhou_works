@@ -2,14 +2,13 @@ body {
     background: #FDEEF1;
 }
 
-#review {
-    width: 140px;
-    font-size: 30px;
-    color: #0000A1;
+img {
+    width: 10%;
+    height: 10%;
 }
 
-#review p {
-    line-height: 32px;
+.img {
+    padding: 0 0 0 0px;
 }
 
 .viewport {
@@ -26,24 +25,31 @@ body {
     color: #B09ECD;
 }
 
-img {
-    width: 10%;
-    height: 10%;
-}
-
-.half img {
-    float: left;
-    width: 10%;
-}
-
 #rush {
     color: #1F6ED4;
 }
 
-#thanks span {
-    color: #6441A4;
-    font-size: 100px;
+#review {
+    width: 140px;
+    font-size: 30px;
+    color: #0000A1;
+    padding: 0;
     font-weight: bold;
+}
+
+#review p {
+    line-height: 32px;
+}
+
+.description {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    padding: 2px;
+    visibility: hidden;
 }
 
 #nothing {
@@ -51,10 +57,6 @@ img {
     width: 280px;
     color: #16335F;
     font-size: 50px;
-}
-
-#nothing a {
-    background-color: #eee;
 }
 
 .circle {
@@ -77,6 +79,16 @@ img {
     font-weight: bold;
 }
 
+#nothing a {
+    background-color: #eee;
+}
+
+#thanks span {
+    color: #6441A4;
+    font-size: 100px;
+    font-weight: bold;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -90,7 +102,10 @@ i {
     color: black;
 }
 
+li {
+    cursor: pointer;
+}
+
 a {
     text-shadow: none;
 }
-

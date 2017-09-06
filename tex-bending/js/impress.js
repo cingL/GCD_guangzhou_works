@@ -676,6 +676,16 @@
             // Force going to active step again, to trigger rescaling
             api.goto(document.querySelector(".step.active"), 500);
         }, 250), false);
+        // navbar
+        $("#home").click(function() {
+            api.goto(0);
+        });
+        $("#images").click(function() {
+            api.goto(8);
+        });
+        $("#join").click(function() {
+            api.goto(35);
+        });
     }, false);
 })(document, window);
 // THAT'S ALL FOLKS!
@@ -685,59 +695,87 @@
 //s
 // I've learnt a lot when building impress.js and I hope this code and comments
 // will help somebody learn at least some part of it.
-// TODO 加navbar后children有變化，需要整理
+
 function zoom(e) {
-    console.log(e); //images -> keyup : target 只有一个了
+    //init all variable element
     var imgs = document.getElementsByTagName('img');
     for (var i = imgs.length - 1; i >= 0; i--) {
         imgs[i].style["width"] = "10%";
         imgs[i].style["height"] = "10%";
     }
-    if (typeof e.target != "undefined") {
-        var elements = e.target.children[0].children[0].children;
-        console.log(e.target);
-        for (var i = elements.length - 1; i >= 0; i--) {
-            if (elements[i].classList.contains("active")) {
-                if (elements[i].children.length > 0) {
-                    var ele = elements[i].children[0].children[0];
-                    zoomImage(ele, 1);
-                    console.log(1);
-                    console.log(elements[i]);
-                    showThoughts(elements[i]);
-                }
-                if (elements[i].children[0].classList.contains("half")) {
-                    var ele = elements[i].children[0].children[0];
-                    zoomImage(ele, 2);
-                    // console.log(1);
-                    // console.log(ele);
-                    showThoughts(ele);
-                }
-            }
-        }
-    } else {
-        zoomImage(e, 1);
-        showThoughts(e);
+    var desc = document.getElementsByClassName("description");
+    for (var i = desc.length - 1; i >= 0; i--) {
+        desc[i].style["visibility"] = "hidden";
     }
-}
-
-function zoomImage(ele, style) {
-    if (style == 2) {
-        ele.style["width"] = "80%";
-    } else {
-        if (typeof ele != "undefined" && ele.tagName == "IMG") {
-            ele.style["width"] = "100%";
-            ele.style["height"] = "100%";
-        }
-    }
-}
-
-function showThoughts(element) {
     var circles = document.getElementsByClassName('circle');
     for (var i = circles.length - 1; i >= 0; i--) {
         circles[i].style["width"] = "50px";
         circles[i].style["height"] = "50px";
         circles[i].children[0].style["visibility"] = "hidden";
     }
+    // console.log(e.toString());
+    // console.log(e);
+    //key event
+    if (e.toString().includes("Key")) {
+        if (e.target) {
+            if (e.target.children.length > 0) {
+                var elements = e.target.children[0].children[0].children;
+                for (var i = elements.length - 1; i >= 0; i--) {
+                    if (elements[i].classList.contains("active")) {
+                        if (elements[i].children.length > 0) {
+                            var ele = elements[i].children[0].children[0];
+                            zoomImage(ele);
+                            showThoughts(elements[i]);
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        //click event
+        if (e.children.length > 0) {
+            //parent
+            zoomImage(e.children)
+        } else {
+            //child -> img
+            zoomImage(e);
+        }
+        showThoughts(e);
+    }
+}
+
+function zoomImage(ele) {
+    if (typeof ele != "undefined") {
+        //click -> element or keydown ->ele
+        if (ele.tagName == "IMG") {
+            ele.style["width"] = "100%";
+            ele.style["height"] = "100%";
+            if (ele.parentElement.children.length > 0) {
+                var children = ele.parentElement.children;
+                for (var i = children.length - 1; i >= 0; i--) {
+                    if (children[i].classList.contains("description")) {
+                        children[i].style["visibility"] = "visible";
+                    }
+                }
+            }
+        } else {
+            //click -> parent
+            if (typeof ele.children != "undefined" && ele.children.length > 0) {
+                var array = ele.children;
+                for (var i = array.length - 1; i >= 0; i--) {
+                    if (array[i].tagName == "IMG") {
+                        array[i].style["width"] = "100%";
+                        array[i].style["height"] = "100%";
+                    } else if (array[i].classList.contains("description")) {
+                        array[i].style["visibility"] = "visible";
+                    }
+                }
+            }
+        }
+    }
+}
+
+function showThoughts(element) {
     if (element.classList.contains("circle")) {
         element.style["width"] = "300px";
         element.style["height"] = "300px";
