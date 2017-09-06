@@ -6,7 +6,6 @@
     width: 20px;
 }
 
-
 /* h1 */
 
 h1 {
@@ -84,9 +83,6 @@ h1 .char16 {
 /* date */
 
 #date {
-    /*margin-bottom: 8%;*/
-    // padding-left: 50%;
-    // transform: rotate(-45deg);
     width: 0;
     color: #F15631;
 }

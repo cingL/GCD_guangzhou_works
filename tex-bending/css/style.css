@@ -109,3 +109,11 @@ li {
 a {
     text-shadow: none;
 }
+
+.icon-bar {
+    background-color: black;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
