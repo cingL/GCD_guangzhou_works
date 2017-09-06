@@ -1,0 +1,120 @@
+body {
+    background: #FDEEF1;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+}
+
+.img {
+    padding: 0 0 0 0px;
+}
+
+.viewport {
+    width: 0;
+    height: 0;
+    position: absolute!important;
+}
+
+#title {
+    position: relative;
+    bottom: 350px;
+    right: 350px;
+    font-size: 250px;
+    color: #B09ECD;
+}
+
+#rush {
+    color: #1F6ED4;
+}
+
+#review {
+    width: 140px;
+    font-size: 30px;
+    color: #0000A1;
+    padding: 0;
+    font-weight: bold;
+}
+
+#review p {
+    line-height: 32px;
+}
+
+.description {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    padding: 10px;
+    visibility: hidden;
+}
+
+#nothing {
+    text-align: center;
+    width: 280px;
+    color: #16335F;
+    font-size: 50px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #296ECB;
+    border-radius: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.thoughts {
+    font-size: 25px;
+    visibility: hidden;
+    width: 215px;
+    height: 215px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #FCEF82;
+    font-weight: bold;
+}
+
+#nothing a {
+    background-color: #eee;
+}
+
+#thanks span {
+    color: #6441A4;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+    font-size: 20px;
+}
+
+i {
+    font-size: 48px;
+    color: black;
+}
+
+li {
+    cursor: pointer;
+}
+
+a {
+    text-shadow: none;
+    text-decoration: none!important;
+}
+
+.icon-bar {
+    background-color: black;
+}
+
+.navbar-collapse {
+    padding: 0;
+}

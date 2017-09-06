@@ -684,7 +684,7 @@
             api.goto(8);
         });
         $("#join").click(function() {
-            api.goto(35);
+            api.goto(36);
         });
     }, false);
 })(document, window);

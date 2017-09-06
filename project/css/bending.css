@@ -1,0 +1,349 @@
+.size span {
+    position: absolute;
+    font: 54px Monaco, MonoSpace;
+    transform-origin: bottom center;
+    height: 200px;
+    width: 20px;
+}
+
+/* h1 */
+
+h1 {
+    transform: rotate(245deg);
+    padding-left: 50%!important;
+    padding-bottom: 50%!important;
+}
+
+h1 span {
+    font-size: 86px!important;
+    font-weight: bold!important;
+}
+
+h1 .char2 {
+    transform: rotate(16deg)
+}
+
+h1 .char3 {
+    transform: rotate(32deg)
+}
+
+h1 .char4 {
+    transform: rotate(48deg)
+}
+
+h1 .char5 {
+    transform: rotate(64deg)
+}
+
+h1 .char6 {
+    transform: rotate(80deg)
+}
+
+h1 .char7 {
+    transform: rotate(96deg)
+}
+
+h1 .char8 {
+    transform: rotate(112deg)
+}
+
+h1 .char9 {
+    transform: rotate(128deg)
+}
+
+h1 .char10 {
+    transform: rotate(144deg)
+}
+
+h1 .char11 {
+    transform: rotate(160deg)
+}
+
+h1 .char12 {
+    transform: rotate(176deg)
+}
+
+h1 .char13 {
+    transform: rotate(192deg)
+}
+
+h1 .char14 {
+    transform: rotate(208deg)
+}
+
+h1 .char15 {
+    transform: rotate(224deg)
+}
+
+h1 .char16 {
+    transform: rotate(240deg)
+}
+
+
+/* date */
+
+#date {
+    width: 0;
+    color: #F15631;
+}
+
+#detail_date .char1 {
+    transform: rotate(-10deg)
+}
+
+#detail_date .char2 {
+    transform: rotate(0)
+}
+
+#detail_date .char3 {
+    transform: rotate(10deg)
+}
+
+#detail_date .char4 {
+    transform: rotate(20deg)
+}
+
+#detail_date .char5 {
+    transform: rotate(30deg)
+}
+
+#detail_date .char6 {
+    transform: rotate(40deg)
+}
+
+#detail_date .char7 {
+    transform: rotate(50deg)
+}
+
+#detail_date .char8 {
+    transform: rotate(60deg)
+}
+
+#detail_date .char9 {
+    transform: rotate(70deg)
+}
+
+
+/* time */
+
+#time {
+    color: #F15631;
+    width: 0;
+}
+
+#detail_time .char1 {
+    transform: rotate(-37deg)
+}
+
+#detail_time .char2 {
+    transform: rotate(-29deg)
+}
+
+#detail_time .char3 {
+    transform: rotate(-21deg)
+}
+
+#detail_time .char4 {
+    transform: rotate(-13deg)
+}
+
+#detail_time .char5 {
+    transform: rotate(-5deg)
+}
+
+#detail_time .char6 {
+    transform: rotate(3deg)
+}
+
+#detail_time .char7 {
+    transform: rotate(11deg)
+}
+
+#detail_time .char8 {
+    transform: rotate(19deg)
+}
+
+#detail_time .char9 {
+    transform: rotate(27deg)
+}
+
+#detail_time .char10 {
+    transform: rotate(35deg)
+}
+
+#detail_time .char11 {
+    transform: rotate(43deg)
+}
+
+#detail_time .char12 {
+    transform: rotate(51deg)
+}
+
+#detail_time .char13 {
+    transform: rotate(59deg)
+}
+
+
+/* location */
+
+#location {
+    width: 0;
+    color: #FCBE32;
+}
+
+#location div {
+    transform: rotate(-20deg);
+}
+
+#location_name .char1 {
+    transform: rotate(-45deg)
+}
+
+#location_name .char2 {
+    transform: rotate(-25deg)
+}
+
+#location_name .char3 {
+    transform: rotate(-5deg)
+}
+
+#location_name .char4 {
+    transform: rotate(15deg)
+}
+
+#location_name .char5 {
+    transform: rotate(35deg)
+}
+
+#location_name .char6 {
+    transform: rotate(55deg)
+}
+
+
+/* city */
+
+#city {
+    color: #F8CA00;
+    width: 0;
+}
+
+#city div {
+    transform: rotate(5deg);
+}
+
+#city_name .char1 {
+    transform: rotate(-65deg)
+}
+
+#city_name .char2 {
+    transform: rotate(-50deg)
+}
+
+
+
+/* participant */
+
+#participant {
+    transform: rotate(-90deg);
+    margin-right: 45%;
+    color: #008744;
+}
+
+#participant span {
+    font-size: 40px;
+}
+
+#participant .char7 {
+    transform: rotate(11.25deg)
+}
+
+#participant .char8 {
+    transform: rotate(22.5deg)
+}
+
+#participant .char9 {
+    transform: rotate(33.75deg)
+}
+
+#participant .char10 {
+    transform: rotate(45deg)
+}
+
+#participant .char11 {
+    transform: rotate(56.25deg)
+}
+
+#participant .char12 {
+    transform: rotate(67.5deg)
+}
+
+#participant .char13 {
+    transform: rotate(78.75deg)
+}
+
+#participant .char14 {
+    transform: rotate(90deg)
+}
+
+#participant .char15 {
+    transform: rotate(101.25deg)
+}
+
+#participant .char16 {
+    transform: rotate(112.5deg)
+}
+
+#participant .char17 {
+    transform: rotate(123.75deg)
+}
+
+#participant .char18 {
+    transform: rotate(135deg)
+}
+
+#participant .char19 {
+    transform: rotate(146.25deg)
+}
+
+#participant .char20 {
+    transform: rotate(157.5deg)
+}
+
+#participant .char21 {
+    transform: rotate(168.75deg)
+}
+
+#participant .char22 {
+    transform: rotate(180deg)
+}
+
+
+/* thanks */
+
+#thanks .char1 {
+    transform: rotate(-90deg);
+}
+
+#thanks .char2 {
+    transform: rotate(-60deg)
+}
+
+#thanks .char3 {
+    transform: rotate(-30deg)
+}
+
+#thanks .char4 {
+    transform: rotate(0)
+}
+
+#thanks .char5 {
+    transform: rotate(30deg)
+}
+
+#thanks .char6 {
+    transform: rotate(60deg)
+}
+
+#thanks .char7 {
+    transform: rotate(90deg)
+}
